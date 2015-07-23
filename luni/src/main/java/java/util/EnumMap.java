@@ -159,7 +159,7 @@ public class EnumMap<K extends Enum<K>, V> extends AbstractMap<K, V> implements
                 throw new NoSuchElementException();
             }
             prePosition = position++;
-            return (E) type.get(new MapEntry(enumMap.keys[prePosition],
+            return type.get(new MapEntry(enumMap.keys[prePosition],
                     enumMap.values[prePosition]));
         }
 
